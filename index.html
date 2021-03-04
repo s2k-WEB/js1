@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js training</title>
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="./index.css">
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="task">
+            <div><span id="tag">Task 1.</span><p>Döntsük el egy számról, hogy páros, vagy páratlan! A kiértékeléstől függően írjuk ki a „páros”, vagy „páratlan” szöveget a konzolba. (Egy szám páros, ha kettővel osztva a maradék = 0)</p></div>
+            <div id="result">
+                <form id="task1" name="task_1">
+                    <label for="number">Kérek egy számot </label><input type="number" name="number"/><br>
+                    <input type="button" value="Beküldés" onClick="task1()"/>
+                </form>
+                <span id="task1_result"></span>
+            </div>
+        </div>
+        <div class="task">
+            <div><span id="tag">Task 2.</span><p>Kérjünk be a felhasználótól egy 100-nál nagyobb páros számot! A kiértékelésről küldjünk üzenetet a konzolra.</p></div>
+            <div id="result">
+                <form id="task2" name="task_2">
+                    <label for="number">Kérek egy számot </label><input type="number" name="number"/><br>
+                    <input type="button" value="Beküldés" onClick="task2()"/>
+                </form>
+                <span id="task2_result"></span>
+            </div>
+        </div>
+        <div class="task">
+            <div><span id="tag">Task 3.</span><p>Dobókocka játék 2 játékossal. Kérjünk be két nevet, generáljunk 2 véletlen számot, és értékeljük ki, ki nyert!</p></div>
+            <div id="result">
+                <form id="task3" name="task_3">
+                    <label for="player1">1. játékos neve </label><input type="text" name="player1"/><br>
+                    <label for="player2">2. játékos neve </label><input type="text" name="player2"/><br>
+                    <input type="button" value="Beküldés" onClick="task3()"/>
+                </form>
+                <span id="task3_result"></span>
+            </div>
+        </div>
+        <div class="task">
+            <div><span id="tag">Task 4.</span><p> BMI index kiszámítása. Számítsuk ki a bekért magasságból és testsúlyból, hogy mennyi az adatok alapján a bmi (testtömeg) index. Értékeljük is ki: ha 18,5 alatti, akkor sovány testalkat, 18,5 és 25 között normál, e fölött pedig túlsúlyos.</p></div>
+            <div id="result">
+                <form id="task4" name="task_4">
+                    <label for="height">Magasság (cm) </label><input type="number" name="height"/><br>
+                    <label for="weight">Súly (kg) </label><input type="number" name="weight"/><br>
+                    <input type="button" value="Beküldés" onClick="task4()"/>
+                </form>
+                <span id="task4_result"></span>
+            </div>
+        </div>    
+        <div class="task">
+            <div><span id="tag">Task 5.</span><p>Kérjünk be a felhasználótól egy hónapot, és írassuk ki, melyik évszaknak felel meg!</p></div>
+            <div id="result">
+                <form id="task5" name="task_5">
+                    <label for="month">Adjon meg egy hónapot számmal vagy névvel</label><br><input type="text" name="month"/><br>
+                    <input type="button" value="Beküldés" onClick="task5()"/>
+                </form>
+                <span id="task5_result"></span>
+            </div>
+        </div>
+        <div class="task">
+            <div><span id="tag">Task 6.</span><p>Keressük meg 0-100 között a páros számokat.</p></div>
+            <div id="result">
+                <button onclick="task6()">Start !</button>
+                <span id="task6_result"></span>
+            </div>
+        </div>
+        <div class="task">
+            <div><span id="tag">Task 7.</span><p>Megszámlálás. Hány darab páros szám található 0-100 között ?</p></div>
+            <div id="result">
+                <button onclick="task7()">Start !</button>
+                <span id="task7_result"></span>
+            </div>
+        </div>
+        <div class="task">
+            <div><span>Task 8.</span><p>Összegzés. Adjuk össze 1 és 100 között a számokat. Mennyi az eredmény ?</p></div>
+            <div id="result">
+                <button onclick="task8()">Start !</button>
+                <span id="task8_result"></span>
+            </div>
+        </div>
+        <div class="task">
+            <div><span id="tag">Task 9.</span><p>Keressük meg, hány darab páros szám található két bekért szám között !</p></div>
+            <div id="result">
+                <form id="task9" name="task_9">
+                    <label for="number1">1. szám </label><input type="number" name="number1"/><br>
+                    <label for="number2">2. szám </label><input type="number" name="number2"/><br>
+                    <input type="button" value="Beküldés" onClick="task9()"/>
+                </form>
+                <span id="task9_result"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
