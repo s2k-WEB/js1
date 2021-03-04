@@ -1,25 +1,29 @@
 /* 1. feladat */
 function task1() {
     let result = document.forms.task_1.number.value;
-    if (result > 0) {
+    if (result != 0) {
         if (result % 2 == 0) {
-            result = "páros.";
+            result = "A megadott szám páros.";
         } else {
-            result = "páratlan.";
+            result = "A megadott szám páratlan.";
         }
     } else {
         result = "Helytelen adat !"
     }
-    document.getElementById("task1_result").innerHTML = `A megadott szám ${result}`;
+    document.getElementById("task1_result").innerHTML = `${result}`;
 }
 
 /* 2. feladat */
 function task2() {
     let result = document.forms.task_2.number.value;
-    if (result % 2 == 0 && result > 100) {
-        result = "A megadott szám 100-nál nagyobb és páros.";
+    if (result > 100) {
+        if (result % 2 == 0) {
+            result = "A megadott szám páros.";
+        } else {
+            result = "A megadott szám páratlan.";
+        }
     } else {
-        result = "A megadott szám nem megfelelő !";
+        result = "A megadott szám nem nagyobb 100-nál !";
     }
     document.getElementById("task2_result").innerHTML = `${result}`;
 }
